@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.content {
+    text-align: center;
+}
+
+h1 {
+    color: #ffd700;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.riddler-hack {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #00ff00;
+    text-align: center;
+    padding-top: 20%;
+    font-family: 'Courier New', monospace;
+    text-shadow: 0 0 10px #00ff00;
+    animation: glitch 0.5s infinite;
+}
+
+.riddler-hack h2 {
+    font-size: 48px;
+}
+
+.riddler-hack p {
+    font-size: 24px;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-5px, 5px); }
+    40% { transform: translate(5px, -5px); }
+    60% { transform: translate(-5px, 0); }
+    80% { transform: translate(5px, 0); }
+    100% { transform: translate(0); }
+}
