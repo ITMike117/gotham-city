@@ -8,23 +8,57 @@
 </head>
 <body>
     <header>
-        <h1>Gotham City</h1>
+        <div class="logo">
+            <img src="https://via.placeholder.com/50?text=GC" alt="Gotham City Logo">
+            <h1>Gotham City</h1>
+        </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="news.html">News</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html">Services</a>
+                    <div class="dropdown-content">
+                        <a href="services.html#police">Police</a>
+                        <a href="services.html#fire">Fire</a>
+                        <a href="services.html#public-works">Public Works</a>
+                    </div>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="visitors.html">Visitors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Welcome to Gotham</h2>
-            <p>A city of resilience, shadowed by hope.</p>
-            <img src="https://via.placeholder.com/600x300?text=Gotham+Skyline" alt="Gotham Skyline">
+        <section class="hero">
+            <img src="https://images.unsplash.com/photo-1503656142023-6e27bedb1466?q=80&w=800&auto=format&fit=crop" alt="Gotham City Skyline">
+            <div class="hero-text">
+                <h2>Welcome to Gotham City</h2>
+                <p>Your beacon of hope in the darkness.</p>
+            </div>
+        </section>
+        <section class="quick-links">
+            <h3>Quick Links</h3>
+            <div class="links-grid">
+                <a href="services.html#police">Police Services</a>
+                <a href="news.html">City News</a>
+                <a href="events.html">Upcoming Events</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Gotham City Council</p>
+        <div class="social-links">
+            <a href="https://x.com/GothamCityGov" target="_blank">X</a>
+            <a href="https://facebook.com/GothamCityOfficial" target="_blank">Facebook</a>
+            <a href="https://instagram.com/GothamCityGov" target="_blank">Instagram</a>
+        </div>
     </footer>
     <div class="riddler-hack" id="riddlerHack">
         <h2>Riddle Me This, Gotham!</h2>
@@ -33,6 +67,7 @@
            Fkdfnh wklv, dqg ilqg pb sodfh!</p>
         <!-- Cipher: Caesar shift 3 back. Decodes to: "What is the name of the empire, Where industry and secrets aspire? Crack this, and find my place!" -->
         <!-- FLAG{gotham_falls} -->
+        <!-- Next step: https://itmike117.github.io/wayne-enterprises -->
     </div>
     <script src="script.js"></script>
 </body>
