@@ -1,11 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Check if the current page is faq.html
+    // Sidebar toggle
+    const sidebar = document.getElementById('sidebar');
+    const toggleButton = document.querySelector('.sidebar-toggle');
+    const mainContent = document.querySelector('main');
+
+    toggleButton.addEventListener('click', () => {
+        if (sidebar.style.width === '250px') {
+            sidebar.style.width = '0';
+            mainContent.style.marginLeft = '0';
+        } else {
+            sidebar.style.width = '250px';
+            mainContent.style.marginLeft = '250px';
+        }
+    });
+
+    // Riddler hack on FAQ page after 5 seconds
     if (window.location.pathname.endsWith('faq.html')) {
         setTimeout(() => {
             const riddlerHack = document.getElementById('riddlerHack');
-            riddlerHack.style.display = 'block'; // Show the hack after 5 seconds
+            riddlerHack.style.display = 'block';
 
-            // Add floating question marks for Riddler flair
             setInterval(() => {
                 const qMark = document.createElement('span');
                 qMark.textContent = '?';
