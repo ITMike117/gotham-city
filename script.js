@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         document.getElementById('riddlerHack').style.display = 'block';
-        // Add random question marks for Riddler flair
         setInterval(() => {
             const hackDiv = document.getElementById('riddlerHack');
             const qMark = document.createElement('span');
