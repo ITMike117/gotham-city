@@ -7,34 +7,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <button class="sidebar-toggle" aria-label="Toggle Sidebar">☰</button>
-    <div class="logo">
-        <img src="https://via.placeholder.com/50?text=GC" alt="Gotham City Logo">
-        <h1>Gotham City</h1>
+    <header>
+        <button class="sidebar-toggle" aria-label="Toggle Sidebar">☰</button>
+        <div class="logo">
+            <img src="https://via.placeholder.com/50?text=GC" alt="Gotham City Logo">
+            <h1>Gotham City</h1>
+        </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="services.html">Services</a>
+                <div class="dropdown-content">
+                    <a href="services.html#police">Police</a>
+                    <a href="services.html#fire">Fire</a>
+                    <a href="services.html#public-works">Public Works</a>
+                </div>
+            </li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="visitors.html">Visitors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="faq.html" style="color: #00ff00;">FAQ</a></li>
+        </ul>
     </div>
-</header>
-<div class="sidebar" id="sidebar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="dropdown">
-            <a href="services.html">Services</a>
-            <div class="dropdown-content">
-                <a href="services.html#police">Police</a>
-                <a href="services.html#fire">Fire</a>
-                <a href="services.html#public-works">Public Works</a>
-            </div>
-        </li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="business.html">Business</a></li>
-        <li><a href="visitors.html">Visitors</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="faq.html" style="color: #00ff00;">FAQ</a></li>
-    </ul>
-</div>
     <main>
         <section>
             <h2>Frequently Asked Questions</h2>
@@ -52,10 +52,13 @@
     </footer>
     <div class="riddler-hack" id="riddlerHack">
         <h2>Riddle Me This, Gotham!</h2>
-        <p>Zkdw lv wkh qdph ri wkh hpsluh,<br>
-           Zkhuh lqgxvwub dqg vhfuhwv dvsluh?<br>
-           Fkdfnh wklv, dqg ilqg pb sodfh!</p>
-        <!-- Cipher: Caesar shift 3 back. Decodes to: "What is the name of the empire, Where industry and secrets aspire? Crack this, and find my place!" -->
+        <p>Who’s the real power? I don’t know!<br>
+           Sift through lies at Wayne’s grand show.<br>
+           Here’s my tease, a secret’s key:<br>
+           I’m what you seek when falsehoods flee,<br>
+           Four letters strong, I stand alone,<br>
+           Name me quick, or stay unknown!</p>
+        <!-- Answer: truth -->
         <!-- FLAG{gotham_falls} -->
         <!-- Next step: https://itmike117.github.io/wayne-enterprises -->
     </div>
